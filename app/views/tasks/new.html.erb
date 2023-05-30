@@ -5,22 +5,16 @@
     <%= form.label :title %>
     <%= form.text_area :title %>
 
-
-
     <%= form.label :details %>
     <%= form.text_area :details %>
 
-
-    <%= form.check_box :completed%>
+    <%= form.check_box :completed, checked: true %>
     <%= form.label :completed %>
   </div>
 
-
-
-
-  </div>
   <div>
     <%= form.submit 'Create Task' %>
   </div>
 <% end %>
+
 <p><%= link_to 'Tasklist', tasks_path %></p>
